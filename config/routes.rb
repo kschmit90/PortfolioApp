@@ -9,4 +9,6 @@ PortfolioApp::Application.routes.draw do
   # User Signup routes
   get "signup" => 'users#new', :as => "signup"
   post "create_user" => 'users#create', :as => "create_user"
+  
+  resources :projects
 end
