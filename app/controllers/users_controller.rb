@@ -7,8 +7,10 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     
     if @user.save
-      redirect_to articles_path
+      flash[:notice] = "User successfully created, please log in."
+      redirect_to root_path
     else
+      flash[:alert] = "Something went wrong!"
       render 'new'
     end
   end
