@@ -1,0 +1,27 @@
+<h1>Edit Project</h1>
+
+<% @project.errors.full_messages.each do |msg| %>
+  <p><%= msg %></p>
+<% end %>
+
+<%= form_for @project do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name %><br />
+	
+	<%= f.label :description %>
+	<%= f.text_field :description %><br />
+	
+	<%= f.label :summary %>
+	<%= f.text_field :summary %><br />
+	
+	<%= f.label :github %>
+	<%= f.text_field :github %><br />
+	
+	<%= f.label :other_url %>
+	<%= f.text_field :other_url %><br />
+	
+	<%= f.label :featured %>
+	<%= f.check_box :featured %><br />
+	
+	<%= f.submit %>
+<% end %>
