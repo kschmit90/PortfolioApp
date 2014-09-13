@@ -35,4 +35,14 @@ class ProjectsController < ApplicationController
         render "edit"
       end
     end
+    
+    def destroy
+      @project = Project.find(params[:id])
+      if @project.delete
+        flash[:notice] = "Project deleted."
+        redirect_to projects_path
+      else
+        render 'edit'
+      end
+    end
 end

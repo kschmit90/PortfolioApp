@@ -1,6 +1,6 @@
 <h1>Projects</h1>
 <% @projects.each do |p| %>
-	<p><%= link_to(p.name, project_path(p.id))%> | <%= link_to("Edit #{p.name}", edit_project_path(p.id)) %></p>
+	<p><%= link_to(p.name, project_path(p.id))%> | <%= link_to("Edit #{p.name}", edit_project_path(p.id)) %> | <%= link_to("Delete #{p.name}", project_path(p), data: { confirm: 'Are you sure?' }, :method => :delete) %></p>
 <% end %>
 
 <p><%= link_to("New Project", new_project_path) %></p>
