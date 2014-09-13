@@ -1,5 +1,5 @@
 <% @contacts.each do |c| %>
-	<p><%= link_to(p.name, contact_path(c.id)) %> | <%= link_to("Edit #{c.name}", edit_contact_path(c.id)) %></p>
+	<p><%= link_to(c.name, contact_path(c.id)) %> | <%= link_to("Edit #{c.name}", edit_contact_path(c.id)) %> | <%= link_to("Delete #{c.name}", contact_path(c), data: { confirm: 'Are you sure?' }, :method => :delete) %></p>
 <% end %>
 
 <p><%= link_to("New Contact", new_contact_path) %></p>

@@ -36,4 +36,14 @@ class ContactsController < ApplicationController
       render "edit"
     end
   end
+  
+  def destroy
+    @contact = Contact.find(params[:id])
+    if @contact.delete
+      flash[:notice] = "Contact deleted."
+      redirect_to contacts_path
+    else
+      render 'edit'
+    end
+  end
 end
