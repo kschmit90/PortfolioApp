@@ -11,7 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140912232849) do
+ActiveRecord::Schema.define(:version => 20140913002658) do
+
+  create_table "projects", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.text     "summary"
+    t.text     "github"
+    t.text     "other_url"
+    t.boolean  "featured"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email"
