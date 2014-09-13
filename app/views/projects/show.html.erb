@@ -1,0 +1,10 @@
+<p><%= @project.name %></p>
+<p><%= @project.description %></p>
+<p><%= @project.summary %></p>
+<p><%= @project.github %></p>
+<p><%= @project.other_url %></p>
+<% if @project.featured %>
+	<p><%= "Featured!" %></p>
+<% else %>
+	<p><%= "Not featured." %></p>
+<% end %>

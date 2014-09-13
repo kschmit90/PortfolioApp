@@ -12,7 +12,7 @@ class ProjectsController < ApplicationController
   def create
     @project = Project.new(params[:project])
     if @project.save
-      redirect_to project_path
+      redirect_to project_path(@project.id)
     else
       render "new"
     end
