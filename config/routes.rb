@@ -11,4 +11,5 @@ PortfolioApp::Application.routes.draw do
   post "create_user" => 'users#create', :as => "create_user"
   
   resources :projects
+  resources :contacts
 end
