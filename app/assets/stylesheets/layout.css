@@ -33,3 +33,15 @@
 .content {
 	clear: both;
 }
+
+#footer {
+	margin-top: 100px;
+	text-align: center;
+	background-color: #f8f8f8;
+	border-radius: 4px solid;
+	border-color: #e7e7e7;
+}
+
+#footer p {
+	margin-top: 5px;
+}

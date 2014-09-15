@@ -5,8 +5,16 @@
 			<hr></hr>
 		</div>
 		<div class="projects">
-			<a href="http://fast-forest-6445.herokuapp.com/"><img src="recipe.jpg"></a>
-			<a href="http://kschmit90.github.io/js-ttt"><img src="ttt_js.jpg"></a>
+			<div class="img_div_1">
+				<% @projects.each do |p| %>
+				<a href="http://fast-forest-6445.herokuapp.com/"><img src="recipe.jpg"></a>
+				<a href="http://kschmit90.github.io/js-ttt"><img src="ttt_js.jpg"></a>
+			</div>
+			<div class="img_div_2">
+				<a href="http://i.imgur.com/9EF4kp5.png"><img src="css2.jpg"></a>
+				<a href="http://i.imgur.com/blUrpTu.png"><img src="css.jpg"></a>
+				<% end %>
+			</div>
 		</div>
 	</div>
 </div>

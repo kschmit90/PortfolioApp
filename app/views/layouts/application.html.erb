@@ -34,8 +34,6 @@
 			<% end %>
 			<div id="nav_content">
 				<p>Kyle Schmit |</p>
-				<%= link_to("Projects", projects_path) %>
-				<p>|</p>
 				<%= link_to("Blog", '#') %>
 				<p>|</p>
 				<%= link_to("Contact", new_contact_path) %>
@@ -52,6 +50,11 @@
 			<% end %>
 
 			<%= yield %>
+		<div id="footer">
+			<div class="container">
+				<p>Kyle Schmit, 2014</p>
+			</div>
+		</div>
 		</div>
 	</div>
 </body>
