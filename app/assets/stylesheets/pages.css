@@ -17,3 +17,8 @@
 	position: relative;
 	left: 333px;
 }
+
+.projects img {
+	height: 40%;
+	width: 40%;
+}
