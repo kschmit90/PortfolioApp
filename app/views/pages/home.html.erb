@@ -1,5 +1,11 @@
-<h1>Home Page</h1>
-<p><%= link_to("New User", signup_path) %></p>
-<p><%= link_to("Log In", login_path) %></p>
-<p><%= link_to("Projects", projects_path) %></p>
-<p><%= link_to("Contacts", contacts_path) %></p>
+<div class="container">
+	<div class="content">
+		<div class="home_header">
+			<h1>Projects</h1>
+			<hr></hr>
+		</div>
+		<div class="projects">
+			<% link_to image_tag("recipe.jpg")%>
+		</div>
+	</div>
+</div>

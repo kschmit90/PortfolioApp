@@ -1,0 +1,35 @@
+.navbar .field {
+	display: inline-block;
+}
+
+.navbar .submit_field {
+	display: inline-block;
+}
+
+.navbar .form_field {
+	float: right;
+}
+
+#nav_content {
+	font-size: 30px;
+}
+
+.navbar #nav_content p{
+	display: inline-block;
+}
+
+.navbar #nav_content a{
+	display: inline-block;
+	padding-left: 0px;
+}
+
+.logged_in {
+	float: right;
+	position: relative;
+	padding-top: 14px;
+	padding-right: 21px;
+}
+
+.content {
+	clear: both;
+}

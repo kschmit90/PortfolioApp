@@ -2,3 +2,18 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+.content .home_header{
+	text-align: center;
+}
+
+.content .home_header hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 3px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+	width: 450px;
+	position: relative;
+	left: 333px;
+}
