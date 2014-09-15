@@ -7,9 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<p><%= session %></p>
-
+<div class="container">
 <% if flash[:notice] %>
 	<p><%= flash[:notice] %></p>
 <% end %>
@@ -23,6 +21,6 @@
 <% end %>
 
 <%= yield %>
-
+</div>
 </body>
 </html>
